@@ -19,42 +19,7 @@ public:
     void addProcess(Process p) {
         processes.push_back(p);
     }
-
-    // Round Robin Scheduling
-    // void executeRoundRobin() {
-    //     // Initialize ready queue
-    //     for (auto& p : processes) {
-    //         if (p.arrivalTime <= currentTime) {
-    //             readyQueue.push(p);
-    //         }
-    //     }
-
-    //     while (!readyQueue.empty()) {
-    //         Process current = readyQueue.front();
-    //         readyQueue.pop();
-
-    //         // Execute for time quantum or remaining time
-    //         int executeTime = std::min(timeQuantum, current.remainingTime);
-    //         current.remainingTime -= executeTime;
-    //         currentTime += executeTime;
-
-    //         // Check if process is completed
-    //         if (current.remainingTime > 0) {
-    //             readyQueue.push(current);
-    //         } else {
-    //             current.isCompleted = true;
-    //             std::cout << "Process " << current.pid << " completed at time " << currentTime << std::endl;
-    //         }
-
-    //         // Add newly arrived processes
-    //         for (auto& p : processes) {
-    //             if (!p.isCompleted && p.arrivalTime <= currentTime) {
-    //                 readyQueue.push(p);
-    //             }
-    //         }
-    //     }
-    // }
-
+    
     void executeRoundRobin() {
         // Initialize ready queue
         for (auto& p : processes) {
