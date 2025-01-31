@@ -1,7 +1,6 @@
 # Operating-System-Project
 
-# Operating System Simulation Project
-## Comprehensive Documentation & Algorithm Guide
+## Comprehensive Documentation & Algorithm Guide and Simulation
 
 ## Table of Contents
 1. Project Overview
